@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Numbers Quiz App</h1>
+        <p>Enter a range of numbers and a target language to begin!</p>
+    </div>
+    
+    <!-- App html -->
+    <div class="app-wrapper">
+        <div class="app-left-wrapper">
+
+            <!-- Number range form -->
+            <div class="number-range-container">
+                <form action="" method="post" class="number-range-form">
+                    <div class="number-range-form-legend">Number Range (lowest to highest)</div>
+                    <fieldset>
+                        <input type=numeric id="lowest-number" name="lowest-number">
+
+                        <input type=numeric id="highest-number" name="highest-number">
+
+                        <button type="submit">Refresh</button>
+                    </fieldset>
+                </form>
+            </div>
+
+            <!-- Answer submit form -->
+            <div class="answer-box">
+                <form action="" method="post" class="answer-box-form"></form>
+                <div class="answer-box-form-legend">Enter Answer Below</div>
+                    <fieldset>
+                        <input type=numeric id="lowest-number" name="answer">
+
+                        <button type="submit">Check Answer</button>
+                    </fieldset>
+            </div>
+        </div>
+
+
+        
+        <div class="audio-box">
+            <img src="radio.png" alt="radio icon">
+        </div>
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
