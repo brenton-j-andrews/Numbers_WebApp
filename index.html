@@ -18,36 +18,40 @@
     <div class="app-wrapper">
         <div class="app-left-wrapper">
 
-            <!-- Number range form -->
+            <!-- Number range form + selected language-->
             <div class="number-range-container">
                 <form action="" method="post" class="number-range-form">
                     <div class="number-range-form-legend">Number Range (lowest to highest)</div>
-                    <fieldset>
-                        <input type=numeric id="lowest-number" name="lowest-number">
+                        <input type=numeric id="lowest-number" name="lowest-number" value="0">
+                        <input type=numeric id="highest-number" name="highest-number" value="100">
+                        <button type="button" id="input-btn">Refresh</button>
 
-                        <input type=numeric id="highest-number" name="highest-number">
-
-                        <button type="submit">Refresh</button>
-                    </fieldset>
+                    <div class="language-select-dropdown">
+                        <label for="language">Pick a language</label>
+                        <select name="language" id="language">
+                            <option value="spanish">Spanish</option>
+                            <option value="mandarin">Mandarin</option>
+                            <option value="german">German</option>
+                        </select>
+                    </div>
                 </form>
             </div>
 
             <!-- Answer submit form -->
             <div class="answer-box">
-                <form action="" method="post" class="answer-box-form"></form>
+                <form action="" method="post" class="answer-box-form">
                 <div class="answer-box-form-legend">Enter Answer Below</div>
-                    <fieldset>
-                        <input type=numeric id="lowest-number" name="answer">
-
-                        <button type="submit">Check Answer</button>
-                    </fieldset>
+                    <input type=numeric id="lowest-number" name="answer">
+                    <button type="submit">Check Answer</button>
+                </form>
+                
             </div>
         </div>
 
 
         
-        <div class="audio-box">
-            <img src="radio.png" alt="radio icon">
+        <div class="audio-box" id="audio-box">
+            
         </div>
         
     </div>
