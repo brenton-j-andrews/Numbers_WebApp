@@ -16,44 +16,55 @@
     
     <!-- App html -->
     <div class="app-wrapper">
-        <div class="app-left-wrapper">
 
-            <!-- Number range form + selected language-->
-            <div class="number-range-container">
-                <form action="" method="post" class="number-range-form">
-                    <div class="number-range-form-legend">Number Range (lowest to highest)</div>
-                        <input type=numeric id="lowest-number" name="lowest-number" value="0">
-                        <input type=numeric id="highest-number" name="highest-number" value="100">
-                        <button type="button" id="input-btn">Refresh</button>
+        <!-- Number range form + selected language -->
+        <div class="number-range-container">
+            <legend><strong><u>Select number range and target language:</u></strong></legend>
+            <form action="" method="post" class="number-range-form">
+                <label for="lowest-number">Lowest Number</label>
+                <input type="number" id="lowest-number" name="lowest-number" value="0">
+                <br>
+                <label for="highest-number">Highest Number</label>
+                <input type="number" id="highest-number" name="highest-number" value="100">
 
-                    <div class="language-select-dropdown">
-                        <label for="language">Pick a language</label>
-                        <select name="language" id="language">
-                            <option value="spanish">Spanish</option>
-                            <option value="mandarin">Mandarin</option>
-                            <option value="german">German</option>
-                        </select>
-                    </div>
-                </form>
+                <div class="language-select-dropdown">
+                    <label for="language">Pick a language</label>
+                    <select name="language" id="language">
+                        <option value="spanish">Spanish</option>
+                        <option value="mandarin">Mandarin</option>
+                        <option value="german">German</option>
+                    </select>
+                </div>
+
+                <button type="button" id="input-btn">Refresh</button>
+            </form>
+        </div> 
+
+        <!-- Answer submit form -->
+        <form action="" method="post" class="answer-box-form">
+            <div class="submit-legend">
+                <legend><strong><u>Select number range and target language:</u></strong></legend>
             </div>
 
-            <!-- Answer submit form -->
-            <div class="answer-box">
-                <form action="" method="post" class="answer-box-form">
-                <div class="answer-box-form-legend">Enter Answer Below</div>
-                    <input type=numeric id="lowest-number" name="answer">
-                    <button type="submit">Check Answer</button>
-                </form>
-                
+            <div class="answer-input">
+                <input type=numeric id="lowest-number" name="answer">
             </div>
-        </div>
 
+            <div class="answer-submit">
+                <button type="submit">Check Answer</button>
+            </div>
+        </form>
+    
 
-        
+        <!-- Speaker image -->
         <div class="audio-box" id="audio-box">
-            
+            <img src="boombox.png">
         </div>
-        
+    
+        <div id="audio-control-btns" class="audio-control-btns">
+            this is where the audio control buttons will be!
+        </div>
+
     </div>
 
     <script src="main.js"></script>

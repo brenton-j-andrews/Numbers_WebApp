@@ -31,7 +31,7 @@ function textToSpeech(number) {
 }
 
 // Random Number generation.
-let number_displayer = document.getElementById("audio-box");
+let number_displayer = document.getElementById("audio-control-btns");
 
 
 function GenerateNumber(lower_range_num, upper_range_num) {
